@@ -45,15 +45,15 @@ print('HI..')
 # start_date = st.date_input("Start date", min_value=df['date'].min(), max_value=df['date'].max(), value=df['date'].min())
 # end_date = st.date_input("End date", min_value=df['date'].min(), max_value=df['date'].max(), value=df['date'].max())
 
-start_date=df['date'].min()
-end_date=df['date'].max()
-mvalue=df['date'].min()
-today = datetime.date.today().strftime('%Y-%m-%d')
-print('Details are : {} - {} - {} - {}'.format(start_date,end_date,mvalue,today))
-selected_dates = st.slider("Select a date:",min_value=start_date,max_value=end_date,value=datetime.strptime(mvalue, "%Y-%m-%d"),format="YYYY-MM-DD")
-print(f'Selected dates is : {selected_dates}')
-# df = df[(df['date'] >= pd.to_datetime(selected_dates[0])) & (df['date'] <= pd.to_datetime(selected_dates[1])) ]
-print('End..')
+# start_date=df['date'].min()
+# end_date=df['date'].max()
+# mvalue=df['date'].min()
+# today = datetime.date.today().strftime('%Y-%m-%d')
+# print('Details are : {} - {} - {} - {}'.format(start_date,end_date,mvalue,today))
+# selected_dates = st.slider("Select a date:",min_value=start_date,max_value=end_date,value=datetime.strptime(mvalue, "%Y-%m-%d"),format="YYYY-MM-DD")
+# print(f'Selected dates is : {selected_dates}')
+# # df = df[(df['date'] >= pd.to_datetime(selected_dates[0])) & (df['date'] <= pd.to_datetime(selected_dates[1])) ]
+# print('End..')
 
 #--- Main Content (Left Column) ---
 # Create two columns for side-by-side charts
